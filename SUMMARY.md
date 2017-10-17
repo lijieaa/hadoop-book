@@ -11,4 +11,5 @@
       * [WordCount](huo-fen-bu-shi-an-zhuang/mapreduce/wordcount.md)
   * [分布式安装](fen-bu-shi-an-zhuang.md)
   * [HA 分布式安装](ha-fen-bu-shi-an-zhuang.md)
+* [软件需求](ruan-jian-xu-qiu.md)
 
