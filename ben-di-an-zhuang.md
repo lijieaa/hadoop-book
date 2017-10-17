@@ -42,3 +42,5 @@ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.5.0.jar grep i
 
 cat output/\*
 
+
+
