@@ -32,5 +32,5 @@ tar -zxvf hadoop-2.5.0.tar.gz -C opt/
 
 mv hadoop-2.5.0/ hadoop
 
-
+6.
 
