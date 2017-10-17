@@ -12,5 +12,5 @@ cd opt
 
 mv jdk1.8.0\_144/ jdk8
 
-3.配置JAVA\_HOME环境变量
+4.配置JAVA\_HOME环境变量
 
