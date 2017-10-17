@@ -1,6 +1,7 @@
 # Summary
 
 * [介绍](README.md)
+* [软件需求](ruan-jian-xu-qiu.md)
 * [安装](chapter1.md)
   * [本地安装](ben-di-an-zhuang.md)
   * [伪分布式安装](huo-fen-bu-shi-an-zhuang.md)
@@ -11,5 +12,4 @@
       * [WordCount](huo-fen-bu-shi-an-zhuang/mapreduce/wordcount.md)
   * [分布式安装](fen-bu-shi-an-zhuang.md)
   * [HA 分布式安装](ha-fen-bu-shi-an-zhuang.md)
-* [软件需求](ruan-jian-xu-qiu.md)
 
