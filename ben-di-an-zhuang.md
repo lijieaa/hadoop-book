@@ -34,5 +34,11 @@ mv hadoop-2.5.0/ hadoop
 
 6.本地运行
 
+mkdir input
 
+cp etc/hadoop/\*.xml input
+
+bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.5.0.jar grep input output 'dfs\[a-z.\]+'
+
+cat output/\*
 
