@@ -16,15 +16,15 @@ mv jdk1.8.0\_144/ jdk8
 
 su root   切换到root用户
 
-vim /etc/profile 
+vim /etc/profile
 
-export JAVA\_HOME=/home/vsz/opt/jdk8 
+export JAVA\_HOME=/home/vsz/opt/jdk8
 
-export PATH=$PATH:$JAVA\_HOME/bin  
+export PATH=$PATH:$JAVA\_HOME/bin
 
 source /etc/profile
 
 java -version
 
-
+5.解压hadoop
 
