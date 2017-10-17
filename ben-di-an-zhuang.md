@@ -14,7 +14,15 @@ mv jdk1.8.0\_144/ jdk8
 
 4.配置JAVA\_HOME环境变量
 
+su root
+
+vim /etc/profile
+
 export JAVA\_HOME=/home/vsz/opt/jdk8
 
 export PATH=$PATH:$JAVA\_HOME/bin
+
+source /etc/profile
+
+java -version
 
