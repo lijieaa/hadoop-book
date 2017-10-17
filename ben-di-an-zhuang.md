@@ -6,7 +6,11 @@ mkdir opt
 
 tar -zxvf jdk-8u144-linux-x64.tar.gz -C opt
 
+3.更改jdk1.8.0\_144目录名为jdk8（目录名太长不好记性）
+
+cd opt
+
+mv jdk1.8.0\_144/ jdk8
+
 3.配置JAVA\_HOME环境变量
-
-
 
