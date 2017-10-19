@@ -6,16 +6,16 @@
 
 **\#永久修改主机名**
 
-* **vi /etc/sysconfig/network              
+* **vi /etc/sysconfig/network                
   **
 
-* **HOSTNAME=localhost.localdomain  \#修改localhost.localdomain为hadoop0              
+* **HOSTNAME=localhost.localdomain  \#修改localhost.localdomain为hadoop0                
   **
 
-* **vi /etc/hosts              
+* **vi /etc/hosts                
   **
 
-* **127.0.0.1    localhost.localdomain  \#修改localhost.localdomain为hadoop0              
+* **127.0.0.1    localhost.localdomain  \#修改localhost.localdomain为hadoop0                
   **
 
 * **reboot**
@@ -38,19 +38,19 @@ hadoop2
 
 # 4.hdfs-site.xml配置
 
-**&lt;configuration&gt;        
+**&lt;configuration&gt;          
 **
 
-**  &lt;property&gt;        
+**  &lt;property&gt;          
 **
 
-**    &lt;name&gt;dfs.namenode.secondary.http-address&lt;/name&gt;        
+**    &lt;name&gt;dfs.namenode.secondary.http-address&lt;/name&gt;          
 **
 
-**    &lt;value&gt;hadoop2:50090&lt;/value&gt;        
+**    &lt;value&gt;hadoop2:50090&lt;/value&gt;          
 **
 
-**  &lt;/property&gt;        
+**  &lt;/property&gt;          
 **
 
 **&lt;/configuration&gt;**
@@ -64,4 +64,12 @@ hadoop2
 **ssh hadoop1**
 
 **ssh hadoop2**
+
+# 6.重新格式化文件系统
+
+**hdfs namenode -format**
+
+7.
+
+
 
