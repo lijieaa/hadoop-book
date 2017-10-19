@@ -1,49 +1,49 @@
 # 1.core-site.xml配置
 
-**&lt;configuration&gt;                          
+**&lt;configuration&gt;                            
 **
 
-**  &lt;property&gt;                          
+**  &lt;property&gt;                            
 **
 
-**    &lt;name&gt;fs.defaultFS&lt;/name&gt;                          
+**    &lt;name&gt;fs.defaultFS&lt;/name&gt;                            
 **
 
-**    &lt;value&gt;hdfs://localhost:9000&lt;/value&gt;                          
+**    &lt;value&gt;hdfs://localhost:9000&lt;/value&gt;                            
 **
 
-**  &lt;/property&gt;                          
+**  &lt;/property&gt;                            
 **
 
-**  &lt;property&gt;                          
+**  &lt;property&gt;                            
 **
 
-**    &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;                          
+**    &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;                            
 **
 
-**    &lt;value&gt;/home/vsz/opt/hadoop/tmp&lt;/value&gt;                          
+**    &lt;value&gt;/home/vsz/opt/hadoop/tmp&lt;/value&gt;                            
 **
 
-**  &lt;/property&gt;                          
+**  &lt;/property&gt;                            
 **
 
 **&lt;/configuration&gt;**
 
 # 2.hdfs-site.xml配置
 
-**&lt;configuration&gt;                      
+**&lt;configuration&gt;                        
 **
 
-**  &lt;property&gt;                      
+**  &lt;property&gt;                        
 **
 
-**    &lt;name&gt;dfs.replication&lt;/name&gt;                      
+**    &lt;name&gt;dfs.replication&lt;/name&gt;                        
 **
 
-**    &lt;value&gt;1&lt;/value&gt;                      
+**    &lt;value&gt;1&lt;/value&gt;                        
 **
 
-**  &lt;/property&gt;                      
+**  &lt;/property&gt;                        
 **
 
 **&lt;/configuration&gt;**
@@ -80,19 +80,13 @@
 
 # 7.通过WEB-UI查看NameNode状态，如果除本机以外不能访问，请关闭防火墙
 
-**service iptables stop **
+**service iptables stop **
 
-****
-
-**chkconfig iptables off**
-
-****
+**chkconfig iptables off**
 
 **service iptables status**
 
 如图：
-
-
 
 
 
