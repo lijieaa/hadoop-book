@@ -1,49 +1,49 @@
 # 1.core-site.xml配置
 
-**&lt;configuration&gt;                            
+**&lt;configuration&gt;                              
 **
 
-**  &lt;property&gt;                            
+**  &lt;property&gt;                              
 **
 
-**    &lt;name&gt;fs.defaultFS&lt;/name&gt;                            
+**    &lt;name&gt;fs.defaultFS&lt;/name&gt;                              
 **
 
-**    &lt;value&gt;hdfs://localhost:9000&lt;/value&gt;                            
+**    &lt;value&gt;hdfs://localhost:9000&lt;/value&gt;                              
 **
 
-**  &lt;/property&gt;                            
+**  &lt;/property&gt;                              
 **
 
-**  &lt;property&gt;                            
+**  &lt;property&gt;                              
 **
 
-**    &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;                            
+**    &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;                              
 **
 
-**    &lt;value&gt;/home/vsz/opt/hadoop/tmp&lt;/value&gt;                            
+**    &lt;value&gt;/home/vsz/opt/hadoop/tmp&lt;/value&gt;                              
 **
 
-**  &lt;/property&gt;                            
+**  &lt;/property&gt;                              
 **
 
 **&lt;/configuration&gt;**
 
 # 2.hdfs-site.xml配置
 
-**&lt;configuration&gt;                        
+**&lt;configuration&gt;                          
 **
 
-**  &lt;property&gt;                        
+**  &lt;property&gt;                          
 **
 
-**    &lt;name&gt;dfs.replication&lt;/name&gt;                        
+**    &lt;name&gt;dfs.replication&lt;/name&gt;                          
 **
 
-**    &lt;value&gt;1&lt;/value&gt;                        
+**    &lt;value&gt;1&lt;/value&gt;                          
 **
 
-**  &lt;/property&gt;                        
+**  &lt;/property&gt;                          
 **
 
 **&lt;/configuration&gt;**
@@ -86,7 +86,21 @@
 
 **service iptables status**
 
-如图：
+# 如图：![](/assets/50070.png)8.yarn框架配置
+
+##     8.1配置mapred-site.xml
+
+                **&lt;configuration&gt;**
+
+**                    &lt;property&gt;**
+
+**                          &lt;name&gt;mapreduce.framework.name&lt;/name&gt;**
+
+**                         &lt;value&gt;yarn&lt;/value&gt;**
+
+**                     &lt;/property&gt;**
+
+                **&lt;/configuration&gt;**
 
 
 
