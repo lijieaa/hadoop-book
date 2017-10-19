@@ -6,16 +6,16 @@
 
 **\#永久修改主机名**
 
-* **vi /etc/sysconfig/network  
+* **vi /etc/sysconfig/network    
   **
 
-* **HOSTNAME=localhost.localdomain  \#修改localhost.localdomain为hadoop0  
+* **HOSTNAME=localhost.localdomain  \#修改localhost.localdomain为hadoop0    
   **
 
-* **vi /etc/hosts  
+* **vi /etc/hosts    
   **
 
-* **127.0.0.1    localhost.localdomain  \#修改localhost.localdomain为hadoop0  
+* **127.0.0.1    localhost.localdomain  \#修改localhost.localdomain为hadoop0    
   **
 
 * **reboot**
@@ -27,6 +27,18 @@
 | NameNode | ResourceMannager | SecondaryNameNode |
 | DataNode | DataNode | DataNode |
 | NodeManager | NodeManager | NodeManager |
+
+# 3.slaves配置
+
+hadoop0
+
+hadoop1
+
+hadoop2
+
+# 4.hdfs.xml配置
+
+
 
 
 
