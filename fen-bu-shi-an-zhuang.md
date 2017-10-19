@@ -2,3 +2,5 @@
 
 **hostname hadoop0     临时修改主机名**
 
+
+
