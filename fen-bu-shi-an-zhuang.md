@@ -2,19 +2,31 @@
 
 \#**临时修改主机名**
 
- **hostname hadoop0     **
+**hostname hadoop0     **
 
 **\#永久修改主机名**
 
-* **vi /etc/sysconfig/network  **
+* **vi /etc/sysconfig/network  
+  **
 
-* **HOSTNAME=localhost.localdomain  \#修改localhost.localdomain为hadoop0  **
+* **HOSTNAME=localhost.localdomain  \#修改localhost.localdomain为hadoop0  
+  **
 
-* **vi /etc/hosts  **
+* **vi /etc/hosts  
+  **
 
-* **127.0.0.1    localhost.localdomain  \#修改localhost.localdomain为hadoop0  **
+* **127.0.0.1    localhost.localdomain  \#修改localhost.localdomain为hadoop0  
+  **
 
 * **reboot**
+
+# 2.节点规划
+
+| 192.168.212.130（hadoop0） | 192.168.212.131\(hadoop1\) | 192.168.212.132\(hadoop2\) |
+| :--- | :--- | :--- |
+| NameNode | ResourceMannager | SecondaryNameNode |
+| DataNode | DataNode | DataNode |
+| NodeManager | NodeManager | NodeManager |
 
 
 
