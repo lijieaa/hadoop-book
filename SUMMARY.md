@@ -6,7 +6,7 @@
   * [本地安装](ben-di-an-zhuang.md)
   * [伪分布式安装](huo-fen-bu-shi-an-zhuang.md)
     * [hdfs](huo-fen-bu-shi-an-zhuang/hdfsming-ling-xing.md)
-      * 命令行
+      * [命令行](huo-fen-bu-shi-an-zhuang/hdfsming-ling-xing/ming-ling-xing.md)
       * java api
     * [mapreduce](huo-fen-bu-shi-an-zhuang/mapreduce.md)
       * [WordCount](huo-fen-bu-shi-an-zhuang/mapreduce/wordcount.md)
