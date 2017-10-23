@@ -1,172 +1,172 @@
 # 1.hdfs-site.xml配置
 
-**&lt;configuration&gt;                    
+**&lt;configuration&gt;                      
 **
 
-**  &lt;property&gt;                    
+**  &lt;property&gt;                      
 **
 
-**    &lt;name&gt;dfs.nameservices&lt;/name&gt;                    
+**    &lt;name&gt;dfs.nameservices&lt;/name&gt;                      
 **
 
-**    &lt;value&gt;mycluster&lt;/value&gt;                    
+**    &lt;value&gt;mycluster&lt;/value&gt;                      
 **
 
-**  &lt;/property&gt;                    
+**  &lt;/property&gt;                      
 **
 
-**  &lt;property&gt;                    
+**  &lt;property&gt;                      
 **
 
-**    &lt;name&gt;dfs.ha.namenodes.mycluster&lt;/name&gt;                    
+**    &lt;name&gt;dfs.ha.namenodes.mycluster&lt;/name&gt;                      
 **
 
-**    &lt;value&gt;nn1,nn2&lt;/value&gt;                    
+**    &lt;value&gt;nn1,nn2&lt;/value&gt;                      
 **
 
-**  &lt;/property&gt;                    
+**  &lt;/property&gt;                      
 **
 
-**  &lt;property&gt;                    
+**  &lt;property&gt;                      
 **
 
-**    &lt;name&gt;dfs.namenode.rpc-address.mycluster.nn1&lt;/name&gt;                    
+**    &lt;name&gt;dfs.namenode.rpc-address.mycluster.nn1&lt;/name&gt;                      
 **
 
-**    &lt;value&gt;hadoop0:8020&lt;/value&gt;                    
+**    &lt;value&gt;hadoop0:8020&lt;/value&gt;                      
 **
 
-**  &lt;/property&gt;                    
+**  &lt;/property&gt;                      
 **
 
-**  &lt;property&gt;                    
+**  &lt;property&gt;                      
 **
 
-**    &lt;name&gt;dfs.namenode.rpc-address.mycluster.nn2&lt;/name&gt;                    
+**    &lt;name&gt;dfs.namenode.rpc-address.mycluster.nn2&lt;/name&gt;                      
 **
 
-**    &lt;value&gt;hadoop1:8020&lt;/value&gt;                    
+**    &lt;value&gt;hadoop1:8020&lt;/value&gt;                      
 **
 
-**  &lt;/property&gt;                    
+**  &lt;/property&gt;                      
 **
 
-**  &lt;property&gt;                    
+**  &lt;property&gt;                      
 **
 
-**    &lt;name&gt;dfs.namenode.http-address.mycluster.nn1&lt;/name&gt;                    
+**    &lt;name&gt;dfs.namenode.http-address.mycluster.nn1&lt;/name&gt;                      
 **
 
-**    &lt;value&gt;hadoop0:50070&lt;/value&gt;                    
+**    &lt;value&gt;hadoop0:50070&lt;/value&gt;                      
 **
 
-**  &lt;/property&gt;                    
+**  &lt;/property&gt;                      
 **
 
-**  &lt;property&gt;                    
+**  &lt;property&gt;                      
 **
 
-**    &lt;name&gt;dfs.namenode.http-address.mycluster.nn2&lt;/name&gt;                    
+**    &lt;name&gt;dfs.namenode.http-address.mycluster.nn2&lt;/name&gt;                      
 **
 
-**    &lt;value&gt;hadoop1:50070&lt;/value&gt;                    
+**    &lt;value&gt;hadoop1:50070&lt;/value&gt;                      
 **
 
-**  &lt;/property&gt;                    
+**  &lt;/property&gt;                      
 **
 
-**  &lt;property&gt;                    
+**  &lt;property&gt;                      
 **
 
-**    &lt;name&gt;dfs.namenode.shared.edits.dir&lt;/name&gt;                    
+**    &lt;name&gt;dfs.namenode.shared.edits.dir&lt;/name&gt;                      
 **
 
-**    &lt;value&gt;qjournal://hadoop0:8485;hadoop1:8485;hadoop2:8485/mycluster&lt;/value&gt;                    
+**    &lt;value&gt;qjournal://hadoop0:8485;hadoop1:8485;hadoop2:8485/mycluster&lt;/value&gt;                      
 **
 
-**  &lt;/property&gt;                    
+**  &lt;/property&gt;                      
 **
 
-**  &lt;property&gt;                    
+**  &lt;property&gt;                      
 **
 
-**    &lt;name&gt;dfs.journalnode.edits.dir&lt;/name&gt;                    
+**    &lt;name&gt;dfs.journalnode.edits.dir&lt;/name&gt;                      
 **
 
-**    &lt;value&gt;/home/vsz/opt/hadoop/tmp/data&lt;/value&gt;                    
+**    &lt;value&gt;/home/vsz/opt/hadoop/tmp/data&lt;/value&gt;                      
 **
 
-**  &lt;/property&gt;                    
+**  &lt;/property&gt;                      
 **
 
-**  &lt;property&gt;                    
+**  &lt;property&gt;                      
 **
 
-**    &lt;name&gt;dfs.client.failover.proxy.provider.mycluster&lt;/name&gt;                    
+**    &lt;name&gt;dfs.client.failover.proxy.provider.mycluster&lt;/name&gt;                      
 **
 
-**    &lt;value&gt;org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider&lt;/value&gt;                    
+**    &lt;value&gt;org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider&lt;/value&gt;                      
 **
 
-**  &lt;/property&gt;                    
+**  &lt;/property&gt;                      
 **
 
-**  &lt;property&gt;                    
+**  &lt;property&gt;                      
 **
 
-**    &lt;name&gt;dfs.ha.fencing.methods&lt;/name&gt;                    
+**    &lt;name&gt;dfs.ha.fencing.methods&lt;/name&gt;                      
 **
 
-**    &lt;value&gt;sshfence&lt;/value&gt;                    
+**    &lt;value&gt;sshfence&lt;/value&gt;                      
 **
 
-**  &lt;/property&gt;                    
+**  &lt;/property&gt;                      
 **
 
-**                    
+**                      
 **
 
-**  &lt;property&gt;                    
+**  &lt;property&gt;                      
 **
 
-**    &lt;name&gt;dfs.ha.fencing.ssh.private-key-files&lt;/name&gt;                    
+**    &lt;name&gt;dfs.ha.fencing.ssh.private-key-files&lt;/name&gt;                      
 **
 
-**    &lt;value&gt;/home/vsz/.ssh/id\_dsa&lt;/value&gt;                    
+**    &lt;value&gt;/home/vsz/.ssh/id\_dsa&lt;/value&gt;                      
 **
 
-**  &lt;/property&gt;                    
+**  &lt;/property&gt;                      
 **
 
 **&lt;/configuration&gt;**
 
 # 2.core-site.xml配置
 
-**&lt;configuration&gt;                
+**&lt;configuration&gt;                  
 **
 
-**  &lt;property&gt;                
+**  &lt;property&gt;                  
 **
 
-**    &lt;name&gt;fs.defaultFS&lt;/name&gt;                
+**    &lt;name&gt;fs.defaultFS&lt;/name&gt;                  
 **
 
-**    &lt;value&gt;hdfs://mycluster&lt;/value&gt;                
+**    &lt;value&gt;hdfs://mycluster&lt;/value&gt;                  
 **
 
-**  &lt;/property&gt;                
+**  &lt;/property&gt;                  
 **
 
-**  &lt;property&gt;                
+**  &lt;property&gt;                  
 **
 
-**    &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;                
+**    &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;                  
 **
 
-**    &lt;value&gt;/home/vsz/opt/hadoop/tmp&lt;/value&gt;                
+**    &lt;value&gt;/home/vsz/opt/hadoop/tmp&lt;/value&gt;                  
 **
 
-**  &lt;/property&gt;                
+**  &lt;/property&gt;                  
 **
 
 **&lt;/configuration&gt;**
@@ -196,6 +196,8 @@
 # 8.启动第二个NameNode\(hadoop1\)
 
 **hadoop-daemon.sh start namenode**
+
+# 9.
 
 
 
