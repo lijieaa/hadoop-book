@@ -1,172 +1,172 @@
 # 1.hdfs-site.xml配置
 
-**&lt;configuration&gt;                              
+**&lt;configuration&gt;                                
 **
 
-**  &lt;property&gt;                              
+**  &lt;property&gt;                                
 **
 
-**    &lt;name&gt;dfs.nameservices&lt;/name&gt;                              
+**    &lt;name&gt;dfs.nameservices&lt;/name&gt;                                
 **
 
-**    &lt;value&gt;mycluster&lt;/value&gt;                              
+**    &lt;value&gt;mycluster&lt;/value&gt;                                
 **
 
-**  &lt;/property&gt;                              
+**  &lt;/property&gt;                                
 **
 
-**  &lt;property&gt;                              
+**  &lt;property&gt;                                
 **
 
-**    &lt;name&gt;dfs.ha.namenodes.mycluster&lt;/name&gt;                              
+**    &lt;name&gt;dfs.ha.namenodes.mycluster&lt;/name&gt;                                
 **
 
-**    &lt;value&gt;nn1,nn2&lt;/value&gt;                              
+**    &lt;value&gt;nn1,nn2&lt;/value&gt;                                
 **
 
-**  &lt;/property&gt;                              
+**  &lt;/property&gt;                                
 **
 
-**  &lt;property&gt;                              
+**  &lt;property&gt;                                
 **
 
-**    &lt;name&gt;dfs.namenode.rpc-address.mycluster.nn1&lt;/name&gt;                              
+**    &lt;name&gt;dfs.namenode.rpc-address.mycluster.nn1&lt;/name&gt;                                
 **
 
-**    &lt;value&gt;hadoop0:8020&lt;/value&gt;                              
+**    &lt;value&gt;hadoop0:8020&lt;/value&gt;                                
 **
 
-**  &lt;/property&gt;                              
+**  &lt;/property&gt;                                
 **
 
-**  &lt;property&gt;                              
+**  &lt;property&gt;                                
 **
 
-**    &lt;name&gt;dfs.namenode.rpc-address.mycluster.nn2&lt;/name&gt;                              
+**    &lt;name&gt;dfs.namenode.rpc-address.mycluster.nn2&lt;/name&gt;                                
 **
 
-**    &lt;value&gt;hadoop1:8020&lt;/value&gt;                              
+**    &lt;value&gt;hadoop1:8020&lt;/value&gt;                                
 **
 
-**  &lt;/property&gt;                              
+**  &lt;/property&gt;                                
 **
 
-**  &lt;property&gt;                              
+**  &lt;property&gt;                                
 **
 
-**    &lt;name&gt;dfs.namenode.http-address.mycluster.nn1&lt;/name&gt;                              
+**    &lt;name&gt;dfs.namenode.http-address.mycluster.nn1&lt;/name&gt;                                
 **
 
-**    &lt;value&gt;hadoop0:50070&lt;/value&gt;                              
+**    &lt;value&gt;hadoop0:50070&lt;/value&gt;                                
 **
 
-**  &lt;/property&gt;                              
+**  &lt;/property&gt;                                
 **
 
-**  &lt;property&gt;                              
+**  &lt;property&gt;                                
 **
 
-**    &lt;name&gt;dfs.namenode.http-address.mycluster.nn2&lt;/name&gt;                              
+**    &lt;name&gt;dfs.namenode.http-address.mycluster.nn2&lt;/name&gt;                                
 **
 
-**    &lt;value&gt;hadoop1:50070&lt;/value&gt;                              
+**    &lt;value&gt;hadoop1:50070&lt;/value&gt;                                
 **
 
-**  &lt;/property&gt;                              
+**  &lt;/property&gt;                                
 **
 
-**  &lt;property&gt;                              
+**  &lt;property&gt;                                
 **
 
-**    &lt;name&gt;dfs.namenode.shared.edits.dir&lt;/name&gt;                              
+**    &lt;name&gt;dfs.namenode.shared.edits.dir&lt;/name&gt;                                
 **
 
-**    &lt;value&gt;qjournal://hadoop0:8485;hadoop1:8485;hadoop2:8485/mycluster&lt;/value&gt;                              
+**    &lt;value&gt;qjournal://hadoop0:8485;hadoop1:8485;hadoop2:8485/mycluster&lt;/value&gt;                                
 **
 
-**  &lt;/property&gt;                              
+**  &lt;/property&gt;                                
 **
 
-**  &lt;property&gt;                              
+**  &lt;property&gt;                                
 **
 
-**    &lt;name&gt;dfs.journalnode.edits.dir&lt;/name&gt;                              
+**    &lt;name&gt;dfs.journalnode.edits.dir&lt;/name&gt;                                
 **
 
-**    &lt;value&gt;/home/vsz/opt/hadoop/tmp/data&lt;/value&gt;                              
+**    &lt;value&gt;/home/vsz/opt/hadoop/tmp/data&lt;/value&gt;                                
 **
 
-**  &lt;/property&gt;                              
+**  &lt;/property&gt;                                
 **
 
-**  &lt;property&gt;                              
+**  &lt;property&gt;                                
 **
 
-**    &lt;name&gt;dfs.client.failover.proxy.provider.mycluster&lt;/name&gt;                              
+**    &lt;name&gt;dfs.client.failover.proxy.provider.mycluster&lt;/name&gt;                                
 **
 
-**    &lt;value&gt;org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider&lt;/value&gt;                              
+**    &lt;value&gt;org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider&lt;/value&gt;                                
 **
 
-**  &lt;/property&gt;                              
+**  &lt;/property&gt;                                
 **
 
-**  &lt;property&gt;                              
+**  &lt;property&gt;                                
 **
 
-**    &lt;name&gt;dfs.ha.fencing.methods&lt;/name&gt;                              
+**    &lt;name&gt;dfs.ha.fencing.methods&lt;/name&gt;                                
 **
 
-**    &lt;value&gt;sshfence&lt;/value&gt;                              
+**    &lt;value&gt;sshfence&lt;/value&gt;                                
 **
 
-**  &lt;/property&gt;                              
+**  &lt;/property&gt;                                
 **
 
-**                              
+**                                
 **
 
-**  &lt;property&gt;                              
+**  &lt;property&gt;                                
 **
 
-**    &lt;name&gt;dfs.ha.fencing.ssh.private-key-files&lt;/name&gt;                              
+**    &lt;name&gt;dfs.ha.fencing.ssh.private-key-files&lt;/name&gt;                                
 **
 
-**    &lt;value&gt;/home/vsz/.ssh/id\_dsa&lt;/value&gt;                              
+**    &lt;value&gt;/home/vsz/.ssh/id\_dsa&lt;/value&gt;                                
 **
 
-**  &lt;/property&gt;                              
+**  &lt;/property&gt;                                
 **
 
 **&lt;/configuration&gt;**
 
 # 2.core-site.xml配置
 
-**&lt;configuration&gt;                          
+**&lt;configuration&gt;                            
 **
 
-**  &lt;property&gt;                          
+**  &lt;property&gt;                            
 **
 
-**    &lt;name&gt;fs.defaultFS&lt;/name&gt;                          
+**    &lt;name&gt;fs.defaultFS&lt;/name&gt;                            
 **
 
-**    &lt;value&gt;hdfs://mycluster&lt;/value&gt;                          
+**    &lt;value&gt;hdfs://mycluster&lt;/value&gt;                            
 **
 
-**  &lt;/property&gt;                          
+**  &lt;/property&gt;                            
 **
 
-**  &lt;property&gt;                          
+**  &lt;property&gt;                            
 **
 
-**    &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;                          
+**    &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;                            
 **
 
-**    &lt;value&gt;/home/vsz/opt/hadoop/tmp&lt;/value&gt;                          
+**    &lt;value&gt;/home/vsz/opt/hadoop/tmp&lt;/value&gt;                            
 **
 
-**  &lt;/property&gt;                          
+**  &lt;/property&gt;                            
 **
 
 **&lt;/configuration&gt;**
@@ -215,5 +215,65 @@
 
 # 13.zookeeper配置（ha自动切换）
 
+\# The number of milliseconds of each tick
 
+tickTime=2000
+
+\# The number of ticks that the initial 
+
+\# synchronization phase can take
+
+initLimit=10
+
+\# The number of ticks that can pass between 
+
+\# sending a request and getting an acknowledgement
+
+syncLimit=5
+
+\# the directory where the snapshot is stored.
+
+\# do not use /tmp for storage, /tmp here is just 
+
+\# example sakes.
+
+dataDir=/home/vsz/opt/zookeeper/data
+
+\# the port at which the clients will connect
+
+\#clientPort=2181
+
+\# the maximum number of client connections.
+
+\# increase this if you need to handle more clients
+
+\#maxClientCnxns=60
+
+\#
+
+\# Be sure to read the maintenance section of the 
+
+\# administrator guide before turning on autopurge.
+
+\#
+
+\# http://zookeeper.apache.org/doc/current/zookeeperAdmin.html\#sc\_maintenance
+
+\#
+
+\# The number of snapshots to retain in dataDir
+
+\#autopurge.snapRetainCount=3
+
+\# Purge task interval in hours
+
+\# Set to "0" to disable auto purge feature
+
+\#autopurge.purgeInterval=1
+
+server.1=hadoop0:2888:3888
+
+server.2=hadoop1:2888:3888
+
+server.3=hadoop2:2888:3888
 
